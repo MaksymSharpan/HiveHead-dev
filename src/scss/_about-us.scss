@@ -1,0 +1,132 @@
+.section {
+  // .section__about-us
+  &__about-us {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 400px;
+    @media (max-width: $breakpoint1400) {
+      padding-bottom: 300px;
+    }
+    @media (max-width: $breakpoint1050) {
+      padding-bottom: 250px;
+    }
+    @media (max-width: $breakpoint900) {
+      padding-bottom: 190px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      padding-top: 55px;
+      padding-bottom: 150px;
+    }
+    @media (max-width: $breakpoint480) {
+      padding-bottom: 100px;
+    }
+  }
+}
+
+.about-as {
+  // .about-as__content
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  // .about-as__content-head
+  &__content-head {
+    margin-bottom: 17px;
+  }
+  // .about-as__content-title
+  &__content-title {
+    font-family: $fontMain;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 140%;
+    text-transform: capitalize;
+    color: #1a171e;
+    margin-bottom: 20px;
+    @media (max-width: $breakpoint1050) {
+      font-size: 40px;
+    }
+    @media (max-width: $breakpoint900) {
+      font-size: 35px;
+      margin-bottom: 16px;
+    }
+    @media (max-width: $breakpoint768) {
+      font-size: 25px;
+    }
+  }
+  // .about-as__content-text
+  &__content-text {
+    font-family: $fontMain;
+
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #1a171e;
+    margin-bottom: 32px;
+    text-align: center;
+    @media (max-width: $breakpoint768) {
+      font-size: 13px;
+    }
+  }
+  // .about-as__content-button
+  &__content-button {
+    padding-left: 62px;
+    margin-bottom: 72px;
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 50px;
+    }
+    img {
+      margin-left: 44px;
+    }
+  }
+  // .about-as__content-image
+  &__content-image {
+    position: absolute;
+    bottom: 0%;
+    transform: translate(0%, 50%);
+    width: 1280px;
+    border-radius: 20px;
+    @media (max-width: $breakpoint1400) {
+      width: 1000px;
+    }
+    @media (max-width: $breakpoint1050) {
+      width: 800px;
+    }
+    @media (max-width: $breakpoint900) {
+      width: 600px;
+    }
+    @media (max-width: $breakpoint768) {
+      width: 450px;
+    }
+    @media (max-width: $breakpoint480) {
+      width: 280px;
+    }
+  }
+}
+
+.button-box {
+  display: flex;
+  justify-content: center;
+}
+.content-box {
+  width: 1085px;
+
+  @media (max-width: $breakpoint1050) {
+    width: 800px;
+  }
+  @media (max-width: $breakpoint900) {
+    width: 600px;
+  }
+  @media (max-width: $breakpoint768) {
+    width: 450px;
+  }
+  @media (max-width: $breakpoint480) {
+    width: 280px;
+  }
+}
+// .image-box {
+//   position: absolute;
+//   top: -50%;
+// }

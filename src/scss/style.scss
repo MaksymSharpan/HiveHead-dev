@@ -3,11 +3,14 @@
 @import './reset';
 @import './global';
 
-
 // Sections SCSS files imports
-// @import './header';
+@import './header';
+@import './hero';
+@import './counter';
+@import './about-us';
+@import './why';
+
 // @import './footer';
 
-
-// Libs 
+// Libs
 // @import './libs/swiper';

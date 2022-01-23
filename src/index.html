@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hive Head</title>
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@400;500;700;900&family=Red+Hat+Display:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Project</title>
-    <link rel="stylesheet" href="./css/style.min.css">
-</head>
-
-<body class="main__body">
+  <body class="main__body">
     <!-- Header -->
-    <!-- @@include('./html/_header.html') -->
+    @@include('./html/_header.html')
 
     <!-- Main Page -->
-    <main></main>
+    <main>
+      <!-- Hero -->
+      @@include('./html/_hero.html')
+      <!-- Counter -->
+      @@include('./html/_counter.html')
+      <!-- About us -->
+      @@include('./html/_about-us.html')
+      <!-- Why -->
+      @@include('./html/_why.html')
+    </main>
 
     <!-- Footer -->
     <!-- @@include('./html/_footer.html') -->
+  </body>
 
-</body>
-
-<script src="./js/scripts.min.js"></script>
-
+  <script src="./js/scripts.min.js"></script>
 </html>

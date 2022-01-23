@@ -1,0 +1,127 @@
+.section {
+  // .section__hero
+  &__hero {
+    background-color: #1a171e;
+    overflow: hidden;
+  }
+}
+
+.hero {
+  // .hero__content
+  &__content {
+    position: relative;
+    z-index: 1;
+    padding-top: 89px;
+    padding-bottom: 109px;
+    width: 543px;
+    @media (max-width: $breakpoint768) {
+      padding-bottom: 70px;
+    }
+    @media (max-width: $breakpoint575) {
+      width: 443px;
+    }
+    @media (max-width: $breakpoint455) {
+      width: 320px;
+      padding-top: 69px;
+      padding-bottom: 55px;
+    }
+  }
+  // .hero__content-title
+  &__content-title {
+    font-family: $fontMain;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 120%;
+    color: #ffffff;
+    margin-bottom: 24px;
+    @media (max-width: $breakpoint575) {
+      font-size: 38px;
+      line-height: 120%;
+    }
+    @media (max-width: $breakpoint455) {
+      font-size: 25px;
+      line-height: 120%;
+    }
+  }
+  // .hero__content-text
+  &__content-text {
+    font-family: $fontMain;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #ffffff;
+    margin-bottom: 36px;
+    @media (max-width: $breakpoint575) {
+      font-size: 14px;
+      line-height: 160%;
+    }
+    @media (max-width: $breakpoint455) {
+      font-size: 12px;
+      line-height: 160%;
+    }
+  }
+  // .hero__content-button
+  &__content-button {
+    padding-left: 62px;
+    margin-bottom: 48px;
+
+    img {
+      margin-left: 44px;
+    }
+  }
+  // .hero__icon-box
+  &__icon-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  //hero__icon-box--icon
+  &__icon-box--icon {
+    background: #211e26;
+    border-radius: 300px;
+    filter: drop-shadow(0px 8px 20px rgba(1, 14, 5, 0.5));
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+
+  // .hero__icon-box--texts
+  &__icon-box--texts {
+  }
+  // .hero__icon-box--texts---text1
+  &__icon-box--texts---text1 {
+    font-family: $fontMain;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: #ffffff;
+    margin-bottom: 6px;
+  }
+  // .hero__icon-box--texts---text2
+  &__icon-box--texts---text2 {
+    font-family: $fontMain;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: #ffffff;
+  }
+}
+
+.hero__star {
+  position: absolute;
+  top: 162px;
+  left: 50%;
+  transform: translate(-50%);
+  @media (max-width: $breakpoint768) {
+    width: 300px;
+  }
+}
+.hero__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 738px;
+  @media (max-width: $breakpoint992) {
+    display: none;
+  }
+}
