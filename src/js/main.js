@@ -41,3 +41,30 @@ function fixedNav() {
 window.addEventListener('scroll', fixedNav);
 
 //counter
+
+//swiper-services
+const swiperServices = new Swiper('.swiper__services', {
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 4.1,
+      spaceBetween: 30,
+    },
+  },
+});

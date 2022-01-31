@@ -12,27 +12,38 @@
       href="https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@400;500;700;900&family=Red+Hat+Display:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
   </head>
 
   <body class="main__body">
-    <!-- Header -->
-    @@include('./html/_header.html')
+    <div class="wrapper">
+      <!-- Header -->
+      @@include('./html/_header.html')
+
+      <!-- Hero -->
+      @@include('./html/_hero.html')
+      <!-- <img class="hero__star" src="./img/Star-hero.svg" alt="hero-star" /> -->
+      <img class="hero__image" src="./img/Vector-4.png" alt="hero-img" />
+    </div>
 
     <!-- Main Page -->
     <main>
-      <!-- Hero -->
-      @@include('./html/_hero.html')
       <!-- Counter -->
       @@include('./html/_counter.html')
       <!-- About us -->
       @@include('./html/_about-us.html')
       <!-- Why -->
       @@include('./html/_why.html')
+      <!-- Services -->
+      <!-- @@include('./html/_services.html') -->
     </main>
 
     <!-- Footer -->
     <!-- @@include('./html/_footer.html') -->
   </body>
-
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="./js/scripts.min.js"></script>
 </html>

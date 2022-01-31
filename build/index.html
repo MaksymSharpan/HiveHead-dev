@@ -12,11 +12,16 @@
       href="https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@400;500;700;900&family=Red+Hat+Display:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
   </head>
 
   <body class="main__body">
-    <!-- Header -->
-    <header>
+    <div class="wrapper">
+      <!-- Header -->
+      <header>
   <!-- Navbar -->
   <nav>
     <div class="container">
@@ -46,8 +51,6 @@
 </header>
 
 
-    <!-- Main Page -->
-    <main>
       <!-- Hero -->
       <section class="section__hero">
   <div class="container">
@@ -76,9 +79,14 @@
     </div>
     <img class="hero__star" src="./img/Star-hero.svg" alt="hero-star" />
   </div>
-  <!-- <img class="hero__image" src="./img/hero-image.jpeg" alt="hero-img" /> -->
 </section>
 
+      <!-- <img class="hero__star" src="./img/Star-hero.svg" alt="hero-star" /> -->
+      <img class="hero__image" src="./img/Vector-4.png" alt="hero-img" />
+    </div>
+
+    <!-- Main Page -->
+    <main>
       <!-- Counter -->
       <section class="section__counter">
   <div class="container">
@@ -187,7 +195,7 @@
           </li>
           <li class="why__list-item">
             <img
-              src="./img/security.jpg"
+              src="./img/security.svg"
               alt="icon"
               class="why__list-item--img"
             />
@@ -215,11 +223,13 @@
   </div>
 </section>
 
+      <!-- Services -->
+      
     </main>
 
     <!-- Footer -->
     
   </body>
-
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="./js/scripts.min.js"></script>
 </html>
