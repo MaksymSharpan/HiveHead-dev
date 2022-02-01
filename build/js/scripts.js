@@ -48,25 +48,60 @@ const swiperServices = new Swiper('.swiper__services', {
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
   },
 
   // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
+    // draggable: true,
   },
 
   // Responsive breakpoints
   breakpoints: {
     // when window width is >= 320px
     320: {
-      slidesPerView: 3,
+      slidesPerView: 1.1,
       spaceBetween: 20,
     },
     // when window width is >= 480px
     480: {
-      slidesPerView: 4.1,
+      slidesPerView: 1.2,
       spaceBetween: 30,
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 2.2,
+      spaceBetween: 40,
+    },
+    992: {
+      slidesPerView: 3.1,
+      spaceBetween: 40,
+    },
+    1200: {
+      slidesPerView: 4.1,
+      spaceBetween: 40,
     },
   },
 });
+
+// Аккордеон
+function accordion() {
+  const items = document.querySelectorAll('.accordion__item-trigger');
+  items.forEach(item => {
+    item.addEventListener('click', () => {
+      const parent = item.parentNode;
+      if (parent.classList.contains('accordion__item-active')) {
+        parent.classList.remove('accordion__item-active');
+      } else {
+        document
+          .querySelectorAll('.accordion__item')
+          .forEach(child => child.classList.remove('accordion__item-active'));
+        parent.classList.add('accordion__item-active');
+      }
+    });
+  });
+}
+accordion();
 

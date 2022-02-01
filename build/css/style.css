@@ -506,7 +506,7 @@ nav {
 .section__services {
   overflow: hidden !important;
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 140px;
 }
 
 .services__content-head {
@@ -561,9 +561,16 @@ nav {
   font-size: 32px;
   line-height: 130%;
   color: #ffffff;
+  margin-bottom: 16px;
 }
 
 .swiper__slide-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   bottom: 24px;
   font-family: "Red Hat Display ", sans-serif;
   font-weight: bold;
@@ -571,6 +578,10 @@ nav {
   line-height: 21px;
   color: #ffffff;
   margin-top: auto;
+}
+
+.swiper__slide-link img {
+  margin-left: 12px;
 }
 
 .swiper-wrapper {
@@ -611,7 +622,7 @@ nav {
 }
 
 .swiper-slide:nth-child(3) {
-  background: #289a6a;
+  background: #289a7f;
 }
 
 .swiper-slide:nth-child(3) .swiper__slide-text {
@@ -619,7 +630,7 @@ nav {
 }
 
 .swiper-slide:nth-child(4) {
-  background: #289a6a;
+  background: #289a9a;
 }
 
 .swiper-slide:nth-child(4) .swiper__slide-text {
@@ -627,7 +638,7 @@ nav {
 }
 
 .swiper-slide:nth-child(5) {
-  background: #289a6a;
+  background: #28859a;
 }
 
 .swiper-slide:nth-child(5) .swiper__slide-text {
@@ -635,11 +646,154 @@ nav {
 }
 
 .swiper-pagination {
-  display: block !important;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 40px;
+  bottom: -40px !important;
+}
+
+.swiper-pagination-bullet-active {
+  fill: #289a6a !important;
+}
+
+.section__faq {
+  position: relative;
+  z-index: 1;
+  padding: 100px 0px 122px 0px;
+  background-image: url(../img/faq-32.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.faq__content {
+  text-align: center;
+}
+
+.faq__head {
+  margin-bottom: 17px;
+}
+
+.faq__title {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 67px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 64px;
+}
+
+.faq__star1 {
+  width: 554px;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: -40px;
+}
+
+.faq__star2 {
+  width: 230px;
+  z-index: -1;
+  position: absolute;
+  top: 90px;
+  left: 0;
+}
+
+.faq__star3 {
+  width: 600px;
+  z-index: -1;
+  position: absolute;
+  bottom: -15%;
+  left: -15%;
+}
+
+.accordion .accordion__item {
+  background: #1a171e;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 40px;
+}
+
+.accordion .accordion__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.accordion .accordion__item.accordion__item-active .accordion__item-content {
+  display: block;
+}
+
+.accordion .accordion__item.accordion__item-active .trigger__arrow {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: 0.1s all ease;
+  -o-transition: 0.1s all ease;
+  transition: 0.1s all ease;
+}
+
+.accordion .accordion__item.accordion__item-active .trigger__img {
+  background: #231e29 !important;
+}
+
+.accordion .accordion__item .accordion__item-trigger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 16px 16px 34px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.accordion .accordion__item .accordion__item-trigger .trigger__text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.accordion .accordion__item .accordion__item-trigger .trigger__img {
+  position: relative;
+  margin-left: auto;
+  background: #34c15c;
+  border-radius: 400px;
+  padding: 16px;
+}
+
+.accordion .accordion__item .accordion__item-content {
+  padding-bottom: 20px;
+  display: none;
+  -webkit-animation: fade 0.3s ease;
+          animation: fade 0.3s ease;
+}
+
+.accordion .accordion__item .accordion__item-content .content__text {
+  margin-top: 37px;
+  padding: 0px 34px 18px 34px;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.accordion .accordion__item .accordion__item-content .content__text:first-child {
+  margin-top: 0;
+}
+
+.accordion .accordion__item .accordion__item-content .content__text a {
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.accordion .accordion__item .accordion__item-content .content__text a:hover,
+.accordion .accordion__item .accordion__item-content .content__text a :focus {
+  color: #34c15c;
 }
 
 @media (max-width: 1399.98px) {
@@ -977,6 +1131,7 @@ nav {
 
   .section__why {
     padding-top: 200px;
+    padding-bottom: 55px;
   }
 
   .why__content-item--title {
@@ -985,6 +1140,52 @@ nav {
 
   .why__content-item--text {
     font-size: 13px;
+  }
+
+  .section__services {
+    padding-top: 55px;
+    padding-bottom: 95px;
+  }
+
+  .services__content-title {
+    font-size: 28px;
+  }
+
+  .section__faq {
+    padding: 55px 0px 100px 0px;
+  }
+
+  .faq__title {
+    font-size: 28px;
+    line-height: 37px;
+    margin-bottom: 50px;
+  }
+
+  .faq__star1 {
+    width: 454px;
+  }
+
+  .faq__star2 {
+    width: 130px;
+  }
+
+  .faq__star3 {
+    width: 500px;
+  }
+
+  .accordion .accordion__item .accordion__item-trigger .trigger__text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .accordion .accordion__item .accordion__item-content .content__text {
+    font-size: 12px;
+    line-height: 130%;
+  }
+
+  .accordion .accordion__item .accordion__item-content .content__text a {
+    font-size: 12px;
+    line-height: 130%;
   }
 }
 
@@ -1015,6 +1216,23 @@ nav {
   .why__list-item:nth-child(3) {
     margin-top: 0px;
   }
+
+  .faq__star1 {
+    display: none;
+  }
+
+  .faq__star2 {
+    display: none;
+  }
+
+  .faq__star3 {
+    width: 300px;
+    bottom: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 50%);
+        -ms-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
+  }
 }
 
 @media (max-width: 574.98px) {
@@ -1030,6 +1248,10 @@ nav {
   .hero__content-text {
     font-size: 14px;
     line-height: 160%;
+  }
+
+  .swiper__slide-title {
+    font-size: 28px;
   }
 }
 
