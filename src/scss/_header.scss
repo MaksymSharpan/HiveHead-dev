@@ -43,6 +43,10 @@ nav {
     font-size: 14px;
     line-height: 16px;
     color: #ffffff;
+    &:hover,
+    :focus {
+      color: #34c15c;
+    }
   }
 }
 
@@ -145,5 +149,9 @@ nav {
   // .menu__link
   .menu__item-link {
     color: white;
+    &:hover,
+    :focus {
+      color: #34c15c;
+    }
   }
 }

@@ -8,7 +8,7 @@
   background-size: cover;
   overflow: hidden;
   @media (max-width: $breakpoint768) {
-    padding: 55px 0px 100px 0px;
+    padding: 55px 0px 55px 0px;
   }
 }
 .faq {
@@ -84,7 +84,6 @@
 
 .accordion {
   .accordion__item {
-    // border-bottom: 1px solid#C4C4C4;
     background: #1a171e;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 40px;
@@ -94,6 +93,15 @@
     }
 
     &.accordion__item-active {
+      .accordion__item-trigger {
+        &:hover,
+        :focus {
+          .trigger__img {
+            background: #289a9a !important;
+            transition: 0.3s all ease;
+          }
+        }
+      }
       .accordion__item-content {
         display: block;
       }
@@ -105,18 +113,23 @@
       .trigger__img {
         background: #231e29 !important;
       }
-      // .line1 {
-      //   opacity: 0;
-      //   transition: 0.1s all ease;
-      // }
     }
 
     .accordion__item-trigger {
       display: flex;
-      // padding: 20px 0;
       padding: 16px 16px 16px 34px;
       align-items: center;
       cursor: pointer;
+      &:hover,
+      :focus {
+        .trigger__img {
+          background-color: #239b45;
+          transition: 0.3s all ease;
+        }
+      }
+      @media (max-width: $breakpoint768) {
+        padding: 13px 13px 13px 20px;
+      }
 
       .trigger__text {
         font-family: $fontMain;
@@ -161,6 +174,7 @@
         @media (max-width: $breakpoint768) {
           font-size: 12px;
           line-height: 130%;
+          padding: 0 18px 12px 18px;
         }
 
         a {
@@ -174,6 +188,7 @@
           &:hover,
           :focus {
             color: #34c15c;
+            transition: 0.3s all ease;
           }
           @media (max-width: $breakpoint768) {
             font-size: 12px;

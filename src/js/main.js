@@ -103,3 +103,51 @@ function accordion() {
   });
 }
 accordion();
+
+AOS.init();
+
+//swiper-services
+const swiperTestimonials = new Swiper('.swiper__testimonials', {
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1.1,
+      spaceBetween: 20,
+    },
+    420: {
+      slidesPerView: 1.2,
+      spaceBetween: 20,
+    },
+
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 1.5,
+      spaceBetween: 40,
+    },
+    768: {
+      slidesPerView: 1.8,
+      spaceBetween: 40,
+    },
+    992: {
+      slidesPerView: 2.1,
+      spaceBetween: 40,
+    },
+    1100: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+  },
+});

@@ -116,8 +116,11 @@
 .content-box {
   width: 1085px;
 
+  @media (max-width: $breakpoint1100) {
+    width: 780px;
+  }
   @media (max-width: $breakpoint1050) {
-    width: 800px;
+    width: 750px;
   }
   @media (max-width: $breakpoint900) {
     width: 600px;

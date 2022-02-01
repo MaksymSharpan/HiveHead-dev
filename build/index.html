@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hive Head</title>
+    <link
+      rel="shortcut icon"
+      href="./img/favicon-office.svg"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./css/style.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,6 +21,7 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body class="main__body">
@@ -82,7 +88,13 @@
 </section>
 
       <!-- <img class="hero__star" src="./img/Star-hero.svg" alt="hero-star" /> -->
-      <img class="hero__image" src="./img/Vector-4.png" alt="hero-img" />
+      <img
+        class="hero__image"
+        src="./img/Vector-4.png"
+        alt="hero-img"
+        data-aos="fade-left"
+        data-aos-duration="2000"
+      />
     </div>
 
     <!-- Main Page -->
@@ -148,6 +160,7 @@
         alt="about-us-img"
         class="about-as__content-image"
       />
+      />
       <!-- </div> -->
     </div>
   </div>
@@ -173,7 +186,11 @@
       </div>
       <div class="why__content-boxes">
         <ul class="why__list">
-          <li class="why__list-item">
+          <li
+            class="why__list-item"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
             <img
               src="./img/flexibility.svg"
               alt="icon"
@@ -185,7 +202,11 @@
               enable you to work the way you want.
             </p>
           </li>
-          <li class="why__list-item">
+          <li
+            class="why__list-item"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
             <img src="./img/value.svg" alt="icon" class="why__list-item--img" />
             <h3 class="why__list-item--title">Value</h3>
             <p class="why__list-item--text">
@@ -193,7 +214,11 @@
               enable you to work the way you want.
             </p>
           </li>
-          <li class="why__list-item">
+          <li
+            class="why__list-item"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             <img
               src="./img/security.svg"
               alt="icon"
@@ -205,7 +230,11 @@
               enable you to work the way you want.
             </p>
           </li>
-          <li class="why__list-item">
+          <li
+            class="why__list-item"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <img
               src="./img/support.svg"
               alt="icon"
@@ -350,7 +379,6 @@
           </p>
         </div>
       </div>
-
       <div class="accordion__item">
         <div class="accordion__item-trigger">
           <div class="trigger__text">
@@ -380,7 +408,6 @@
           </p>
         </div>
       </div>
-
       <div class="accordion__item">
         <div class="accordion__item-trigger">
           <div class="trigger__text">
@@ -446,11 +473,138 @@
   <img class="faq__star3" src="../img/Star-hero.svg" alt="star-image" />
 </section>
 
+      <!-- Testimonials -->
+      <section class="section__testimonials">
+  <div class="container">
+    <div class="testimonials__content">
+      <p class="testimonials__content-head head">Testimonials</p>
+      <h2 class="testimonials__content-title">
+        Our clients, agents, and talents have a lot to say about Hive Head
+      </h2>
+    </div>
+    <!-- Slider main container -->
+    <div class="swiper swiper__testimonials">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide testimonials__swiper-slide">
+          <div class="testimonials__slide-content">
+            <div class="slide__photo-box">
+              <div class="slide__photo-box--content">
+                <img
+                  src="./img/person1.svg"
+                  alt="person-image"
+                  class="slide__image"
+                />
+                <div class="slide__name-box">
+                  <p class="slide__name">Marcy M.</p>
+                  <p class="slide__name-text">Customer</p>
+                </div>
+              </div>
+              <div class="slide__quote">
+                <img
+                  src="./img/quote.svg"
+                  alt="quote-icon"
+                  class="quote__img"
+                />
+              </div>
+            </div>
+            <p class="slide__text">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum deleniti atque corrupti quos
+              dolores et quas molestias excepturi sint occaecati cupiditate non
+              provident.
+            </p>
+            <img
+              src="./img/Star-hero.svg"
+              alt="testimonials-star-img"
+              class="tesimonials__star1"
+            />
+          </div>
+        </div>
+        <div class="swiper-slide testimonials__swiper-slide">
+          <div class="testimonials__slide-content">
+            <div class="slide__photo-box">
+              <div class="slide__photo-box--content">
+                <img
+                  src="./img/person3.svg"
+                  alt="person-image"
+                  class="slide__image"
+                />
+                <div class="slide__name-box">
+                  <p class="slide__name">Jordan S.</p>
+                  <p class="slide__name-text">Customer</p>
+                </div>
+              </div>
+              <div class="slide__quote">
+                <img
+                  src="./img/quote.svg"
+                  alt="quote-icon"
+                  class="quote__img"
+                />
+              </div>
+            </div>
+            <p class="slide__text">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum deleniti atque corrupti quos
+              dolores et quas molestias excepturi sint occaecati cupiditate non
+              provident.
+            </p>
+            <img
+              src="./img/Star-hero.svg"
+              alt="testimonials-star-img"
+              class="tesimonials__star2"
+            />
+          </div>
+        </div>
+        <div class="swiper-slide testimonials__swiper-slide">
+          <div class="testimonials__slide-content">
+            <div class="slide__photo-box">
+              <div class="slide__photo-box--content">
+                <img
+                  src="./img/person3.svg"
+                  alt="person-image"
+                  class="slide__image"
+                />
+                <div class="slide__name-box">
+                  <p class="slide__name">DeAndre T.</p>
+                  <p class="slide__name-text">Customer</p>
+                </div>
+              </div>
+              <div class="slide__quote">
+                <img
+                  src="./img/quote.svg"
+                  alt="quote-icon"
+                  class="quote__img"
+                />
+              </div>
+            </div>
+            <p class="slide__text">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum deleniti atque corrupti quos
+              dolores et quas molestias excepturi sint occaecati cupiditate non
+              provident.
+            </p>
+            <img
+              src="./img/Star-hero.svg"
+              alt="testimonials-star-img"
+              class="tesimonials__star3"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
     </main>
 
     <!-- Footer -->
     
   </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="./js/scripts.min.js"></script>
 </html>

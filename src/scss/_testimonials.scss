@@ -1,0 +1,144 @@
+.section {
+  // .section__testimonials
+  &__testimonials {
+    overflow: hidden !important;
+    padding: 100px 0px 100px 0px;
+    @media (max-width: $breakpoint768) {
+      padding: 55px 0px 95px 0px;
+    }
+  }
+}
+.container {
+}
+.testimonials {
+  // .testimonials__content
+  // &__content {
+  // }
+  // .testimonials__content-head
+  &__content-head {
+    text-align: center;
+    margin-bottom: 17px;
+  }
+  // .testimonials__content-title
+  &__content-title {
+    font-family: $fontMain;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 67px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #1a171e;
+    margin-bottom: 28px;
+    @media (max-width: $breakpoint768) {
+      font-size: 28px;
+      line-height: 148%;
+    }
+  }
+  // .testimonials__swiper-slide
+  &__swiper-slide {
+    position: relative;
+    overflow: hidden;
+    background: #1a171e !important;
+    border-radius: 16px !important;
+    min-width: 380px !important;
+    padding: 33px 33px 47px 33px !important;
+
+    @media (max-width: $breakpoint768) {
+      min-width: 250px !important;
+      padding: 23px 23px 37px 23px !important;
+    }
+  }
+  // .testimonials__slide-content
+  // &__slide-content {
+  // }
+}
+
+.swiper {
+  // .swiper__testimonials
+  &__testimonials {
+    overflow: visible !important;
+  }
+}
+// .swiper-wrapper {
+// }
+// .swiper-slide {
+// }
+.slide {
+  // .slide__photo-box
+  &__photo-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+  // .slide__photo-box--content
+  &__photo-box--content {
+    display: flex;
+    align-items: center;
+  }
+  // .slide__image
+  &__image {
+    margin-right: 16px;
+  }
+  // .slide__name-box
+  &__name-box {
+  }
+  // .slide__name
+  &__name {
+    font-family: $fontMain;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+  // .slide__name-text
+  &__name-text {
+    font-family: $fontMain;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    opacity: 0.5;
+  }
+  // .slide__quoma
+  // &__quote {
+  // }
+  // .slide__text
+  &__text {
+    font-family: $fontMain;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+    color: #ffffff;
+    font-feature-settings: 'salt' on, 'liga' off;
+  }
+}
+// .quote {
+//   // .quoma__img
+//   &__img {
+//   }
+// }
+.swiper-pagination {
+}
+
+.tesimonials__star1 {
+  z-index: -1;
+  position: absolute;
+  top: 2px;
+  right: 93px;
+  width: 555px;
+}
+.tesimonials__star2 {
+  z-index: -1;
+  position: absolute;
+  top: 78px;
+  right: 50%;
+  transform: translate(50%);
+  width: 555px;
+}
+.tesimonials__star3 {
+  z-index: -1;
+  position: absolute;
+  top: -94%;
+  left: 25%;
+  width: 555px;
+}

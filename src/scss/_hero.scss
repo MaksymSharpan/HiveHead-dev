@@ -124,8 +124,12 @@
 }
 
 .wrapper {
+  overflow: hidden;
   position: relative;
   padding-bottom: 109px;
   background-color: #1a171e;
   z-index: 2;
+  @media (max-width: $breakpoint768) {
+    padding-bottom: 55px;
+  }
 }

@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hive Head</title>
+    <link
+      rel="shortcut icon"
+      href="./img/favicon-office.svg"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./css/style.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,6 +21,7 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body class="main__body">
@@ -26,7 +32,13 @@
       <!-- Hero -->
       @@include('./html/_hero.html')
       <!-- <img class="hero__star" src="./img/Star-hero.svg" alt="hero-star" /> -->
-      <img class="hero__image" src="./img/Vector-4.png" alt="hero-img" />
+      <img
+        class="hero__image"
+        src="./img/Vector-4.png"
+        alt="hero-img"
+        data-aos="fade-left"
+        data-aos-duration="2000"
+      />
     </div>
 
     <!-- Main Page -->
@@ -41,11 +53,14 @@
       @@include('./html/_services.html')
       <!-- FAQ -->
       @@include('./html/_faq.html')
+      <!-- Testimonials -->
+      @@include('./html/_testimonials.html')
     </main>
 
     <!-- Footer -->
     <!-- @@include('./html/_footer.html') -->
   </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="./js/scripts.min.js"></script>
 </html>
