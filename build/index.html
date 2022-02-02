@@ -27,7 +27,7 @@
   <body class="main__body">
     <div class="wrapper">
       <!-- Header -->
-      <header>
+      <header id="header">
   <!-- Navbar -->
   <nav>
     <div class="container">
@@ -130,7 +130,7 @@
 </section>
 
       <!-- About us -->
-      <section class="section__about-us">
+      <section id="section__about-us" class="section__about-us">
   <div class="container">
     <div class="about-as__content">
       <div class="content-box">
@@ -167,7 +167,7 @@
 </section>
 
       <!-- Why -->
-      <section class="section__why">
+      <section id="section__why" class="section__why">
   <div class="container">
     <div class="why__content">
       <div class="why__content-item">
@@ -253,7 +253,7 @@
 </section>
 
       <!-- Services -->
-      <section class="section__services">
+      <section id="section__services" class="section__services">
   <div class="container">
     <div class="services__content">
       <p class="services__content-head head">Our Services</p>
@@ -468,9 +468,9 @@
     </div>
   </div>
 
-  <img class="faq__star1" src="../img/Star-hero.svg" alt="star-image" />
-  <img class="faq__star2" src="../img/Star-hero.svg" alt="star-image" />
-  <img class="faq__star3" src="../img/Star-hero.svg" alt="star-image" />
+  <img class="faq__star1" src="./img/Star-hero.svg" alt="star-image" />
+  <img class="faq__star2" src="./img/Star-hero.svg" alt="star-image" />
+  <img class="faq__star3" src="./img/Star-hero.svg" alt="star-image" />
 </section>
 
       <!-- Testimonials -->
@@ -600,9 +600,80 @@
 </section>
 
     </main>
-
     <!-- Footer -->
-    
+    <footer>
+  <div class="container">
+    <div class="footer">
+      <div class="footer__content">
+        <div class="content__logo">
+          <a href="#header" data-scroll>
+            <img
+              src="./img/Logo.svg"
+              alt="logo-icon"
+              class="logo__image-footer"
+          /></a>
+        </div>
+        <ul class="content__list">
+          <li class="content__list-item">
+            <a
+              href="#section__about-us"
+              class="content__list-item--link"
+              data-scroll
+              >About Us</a
+            >
+          </li>
+          <li class="content__list-item">
+            <a href="#section__why" class="content__list-item--link" data-scroll
+              >What is Hive Head</a
+            >
+          </li>
+          <li class="content__list-item">
+            <a
+              href="#section__services"
+              class="content__list-item--link"
+              data-scroll
+              >Services</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        <div>
+          <p class="copyright__text">
+            &copy;2022 Hive Head. All rights reserved
+          </p>
+        </div>
+
+        <ul class="copyright__list">
+          <li class="copyright__list-item">
+            <a href="" class="copyright__list-item--link"
+              ><img src="./img/insta.svg" alt=""
+            /></a>
+          </li>
+          <li class="copyright__list-item">
+            <a href="" class="copyright__list-item--link"
+              ><img src="./img/ball.svg" alt=""
+            /></a>
+          </li>
+          <li class="copyright__list-item">
+            <a href="" class="copyright__list-item--link"
+              ><img src="./img/twitter.svg" alt=""
+            /></a>
+          </li>
+          <li class="copyright__list-item">
+            <a href="" class="copyright__list-item--link"
+              ><img src="./img/youtube.svg" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <div class="coding__by">
+      <p>coding by Maksym Sharpan</p>
+    </div>
   </body>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>

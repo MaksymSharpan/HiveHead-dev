@@ -104,7 +104,7 @@ function accordion() {
 }
 accordion();
 
-AOS.init();
+AOS.init({ mirror: true });
 
 //swiper-services
 const swiperTestimonials = new Swiper('.swiper__testimonials', {
@@ -150,4 +150,9 @@ const swiperTestimonials = new Swiper('.swiper__testimonials', {
       spaceBetween: 40,
     },
   },
+});
+
+//page-scroll
+const scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 300,
 });

@@ -36,6 +36,7 @@
   }
   // .testimonials__swiper-slide
   &__swiper-slide {
+    z-index: -1 !important;
     position: relative;
     overflow: hidden;
     background: #1a171e !important;
@@ -121,14 +122,14 @@
 }
 
 .tesimonials__star1 {
-  z-index: -1;
+  z-index: -1 !important;
   position: absolute;
   top: 2px;
   right: 93px;
   width: 555px;
 }
 .tesimonials__star2 {
-  z-index: -1;
+  z-index: -1 !important;
   position: absolute;
   top: 78px;
   right: 50%;
@@ -136,7 +137,7 @@
   width: 555px;
 }
 .tesimonials__star3 {
-  z-index: -1;
+  z-index: -1 !important;
   position: absolute;
   top: -94%;
   left: 25%;

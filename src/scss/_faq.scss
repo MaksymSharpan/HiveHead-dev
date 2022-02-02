@@ -87,6 +87,8 @@
     background: #1a171e;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 40px;
+    max-width: 1062px;
+    margin: 0 auto;
 
     &:not(:last-child) {
       margin-bottom: 24px;

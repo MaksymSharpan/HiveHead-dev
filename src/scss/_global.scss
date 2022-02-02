@@ -76,3 +76,19 @@ body {
   text-transform: capitalize;
   color: #29b550;
 }
+
+.coding__by {
+  z-index: 99;
+  display: inline-flex;
+  position: fixed;
+  top: 100%;
+  margin-top: -20px;
+  right: 0;
+  background-color: #8a8a94;
+  padding: 4px;
+  border-radius: 4px;
+  opacity: 70%;
+  p {
+    font-size: 12px;
+  }
+}

@@ -1,4 +1,99 @@
 // Footer
 footer {
-    display: block;
+  display: block;
+  padding: 24px 0px 40px 0px;
+  background-color: #1a171e;
+}
+
+.footer {
+  // .footer__content
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 24px;
+    padding-bottom: 42px;
+  }
+  // .footer__copyright
+  &__copyright {
+    padding-top: 24px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1062px;
+    margin: 0 auto;
+
+    @media (max-width: $breakpoint575) {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+}
+.content {
+  // .content__logo
+  &__logo {
+  }
+  // .content__list
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    @media (max-width: $breakpoint575) {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+  // .content__list-item
+  &__list-item {
+  }
+  // .content__list-item--link
+  &__list-item--link {
+    font-family: $fontMain;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    &:hover,
+    :focus {
+      color: #34c15c;
+    }
+  }
+}
+.logo {
+  // .logo__image-footer
+  &__image-footer {
+  }
+}
+.copyright {
+  // .copyright__text
+  &__text {
+    font-family: $fontCopyright;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #828282;
+  }
+  // .copyright__list
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+  // .copyright__list-item
+  &__list-item {
+    &:hover,
+    :focus {
+      transform: scale(150%);
+    }
+  }
+  // .copyright__list-item--link
+  &__list-item--link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
